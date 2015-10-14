@@ -1,0 +1,11 @@
+<template>
+	<label for="timeout">Timeout</label>
+	<input type="text" id="timeout" value.bind="timeout" />
+
+	<label for="message">Message</label>
+	<input type="text" id="message" value.bind="message" />
+
+	<button click.delegate="publish()">Try it out</button>
+
+	<snackbar event-aggregator.bind="ea" channel.bind="channel" timeout.bind="timeout"></snackbar>
+</template>

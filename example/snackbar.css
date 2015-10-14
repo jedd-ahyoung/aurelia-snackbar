@@ -1,0 +1,141 @@
+@media (min-width: 600px) {
+	.snackbar {
+		box-sizing: border-box;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-family: sans-serif;
+	}
+
+	.snackbar .au-enter-active {
+		-webkit-animation: slideUp .5s;
+		animation: slideUp .5s;
+	}
+
+	.snackbar .au-leave-active {
+		-webkit-animation: fadeOut 1s;
+		animation: fadeOut 1s;
+	}
+
+	.snackbar > .snackbar-item {
+		display: flex;
+		flex-direction: row;
+		width: 500px;
+		margin: 10px auto;
+		background: black;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-message {
+		flex: 2 0 0;
+		padding: 1.2em;
+		color: white;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-action {
+		display: flex;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-action button {
+		color: yellow;
+		display: block;
+		text-transform: uppercase;
+		font-weight: bold;
+		border: 0;
+		background: transparent;
+		padding: 1.2em;
+		margin: .5em;
+	}
+}
+
+@media (max-width: 600px) {
+	.snackbar {
+		box-sizing: border-box;
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		font-family: sans-serif;
+	}
+
+	.snackbar .au-enter-active {
+		-webkit-animation: slideUp .5s;
+		animation: slideUp .5s;
+	}
+
+	.snackbar .au-leave-active {
+		-webkit-animation: fadeOut 1s;
+		animation: fadeOut 1s;
+	}
+
+	.snackbar > .snackbar-item {
+		display: flex;
+		flex-direction: row;
+		background: black;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-message {
+		flex: 2 0 0;
+		padding: 1.2em;
+		color: white;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-action {
+		display: flex;
+	}
+
+	.snackbar > .snackbar-item > .snackbar-action button {
+		color: yellow;
+		display: block;
+		text-transform: uppercase;
+		font-weight: bold;
+		border: 0;
+		background: transparent;
+		padding: 1.2em;
+		margin: .5em;
+	}
+}
+
+@keyframes slideUp {
+	0% {
+	    -webkit-transform: translate3d(0, 100%, 0);
+	    -ms-transform: translate3d(0, 100%, 0);
+	    transform: translate3d(0, 100%, 0)
+	}
+	100% {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0)
+	}
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes slideUp {
+	0% {
+	    -webkit-transform: translate3d(0, 100%, 0);
+	    -ms-transform: translate3d(0, 100%, 0);
+	    transform: translate3d(0, 100%, 0)
+	}
+	100% {
+	    -webkit-transform: translate3d(0, 0, 0);
+	    -ms-transform: translate3d(0, 0, 0);
+	    transform: translate3d(0, 0, 0)
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

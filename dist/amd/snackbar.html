@@ -1,0 +1,10 @@
+<template class.bind="class">
+	<div class="au-animate snackbar-item" show.bind="active">
+		<div class="snackbar-message">
+			<span>${text}</span>
+		</div>
+		<div class="snackbar-action">
+			<button click.delegate="performAction()">${action.name}</button>
+		</div>
+	</div>
+</template>
